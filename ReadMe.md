@@ -43,3 +43,7 @@ Video:
 https://www.youtube.com/watch?v=ajmK0ZNcM4Q
 
 Ende bei 50:00
+
+infos:
+https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
+https://github.com/craftzdog/dotfiles-public/tree/master
