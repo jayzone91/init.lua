@@ -20,6 +20,18 @@ $env:LOCALAPPDATA\nvim
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
+# Install lua language Server
+
+´´´
+scoop install lua-language-server
+´´´
+
+# Install Typescript Server
+
+```
+npm i -g typescript-language-server
+```
+
 # Install font and set it as standard in terminal
 
 ```
