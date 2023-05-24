@@ -21,3 +21,7 @@ $env:LOCALAPPDATA\nvim
 ## Install Dependencies
 
 :PackerSync
+
+
+
+https://www.youtube.com/watch?v=ajmK0ZNcM4Q
