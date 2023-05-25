@@ -12,8 +12,9 @@ packer.startup(function(use)
     "svrana/neosolarized.nvim",
     requires = { "tjdevries/colorbuddy.nvim" }
   }
+  use "kyazdani42/nvim-web-devicons" -- File Icons
   use {
-    "nvim-lualine/lualine.nvim", -- statusline
+    "nvim-lualine/lualine.nvim",     -- statusline
     requires = { "nvim-tree/nvim-web-devicons", opt = true }
   }
   use "onsails/lspkind-nvim"  -- VS Code like pictograms
@@ -26,9 +27,12 @@ packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate"
   }
+  use 'jose-elias-alvarez/null-ls.nvim'  -- use Neovim as a language Server
+  use "MunifTanjim/prettier.nvim" -- Prettier in nvim
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
   use "nvim-lua/plenary.nvim"
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"
+  use "norcalli/nvim-colorizer.lua"
 end)

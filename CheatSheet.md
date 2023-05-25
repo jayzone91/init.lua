@@ -7,3 +7,7 @@
 <leader>gf => live grep
 dw => delete Word backwards
 <C-a> => select all
+
+in Filebrowser:
+
+N => new file

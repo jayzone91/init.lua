@@ -35,7 +35,7 @@ scoop install lua-language-server
 # Install Language Servers
 
 ```
-npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server
+npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server @fsouza/prettierd eslint_d
 
 rustup component add rust-src
 ```
@@ -96,7 +96,7 @@ Add following line in notepad and save
 Video:
 https://www.youtube.com/watch?v=ajmK0ZNcM4Q
 
-Ende bei 52:30
+Ende bei 1:23:
 
 infos:
 https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
