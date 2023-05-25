@@ -81,6 +81,10 @@ Add following line in notepad and save
 
 # Start Neovim
 
+```
+:PackerInstall
+```
+
 "Error in coroutine: no command :TSUpdate" Error happens only once @ install
 
 Video:
