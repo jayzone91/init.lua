@@ -20,6 +20,12 @@ $env:LOCALAPPDATA\nvim
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
+# Install RipGrep
+
+```
+scoop install ripgrep
+```
+
 # Install lua language Server
 
 ´´´

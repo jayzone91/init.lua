@@ -50,5 +50,22 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 -- File Explorer
 vim.keymap.set(
-  "n", "<leader>pv", "<cmd>lua require('telescope.builtin').find_files({ no_ignore = false, hidden = true })<cr>",
+  "n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files({ no_ignore = false, hidden = true })<cr>",
   opts)
+vim.keymap.set(
+  "n", "<leader>gf", "<cmd>lua require('telescope.builtin').live_grep()<cr>",
+  opts)
+vim.keymap.set(
+  "n", "<leader>pv", function()
+    telescope.extensions.file_browser.file_browser({
+      path = "%:p:h",
+      cwd = telescope_buffer_dir(),
+      respect_gitignore = false,
+      hidden = true,
+      grouped = true,
+      previewer = false,
+      initial_mode = "normal",
+      layout_config = { height = 40 }
+    })
+  end)
+
