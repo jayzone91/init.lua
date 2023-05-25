@@ -26,10 +26,12 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 scoop install lua-language-server
 ´´´
 
-# Install Typescript Server
+# Install Language Servers
 
 ```
-npm i -g typescript-language-server
+npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server
+
+rustup component add rust-src
 ```
 
 # Install Tree Sitter
@@ -38,7 +40,11 @@ npm i -g typescript-language-server
 scoop install tree-sitter
 ```
 
-"Error in coroutine: no command :TSUpdate" Error happens only once @ install
+# Install Zig Lang
+
+```
+choco install zig
+```
 
 # Install font and set it as standard in terminal
 
@@ -59,6 +65,24 @@ Apperance PowerShell
 - Transparency: 85%
 - Acrylic material
 
+# Install oh my posh
+
+```Powershell
+winget install JanDeDobbeleer.OhMyPosh -s winget
+notepad $PROFILE
+
+```
+
+Add following line in notepad and save
+
+```
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" --print) -join "`n"))
+```
+
+# Start Neovim
+
+"Error in coroutine: no command :TSUpdate" Error happens only once @ install
+
 Video:
 https://www.youtube.com/watch?v=ajmK0ZNcM4Q
 
@@ -67,6 +91,3 @@ Ende bei 52:30
 infos:
 https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
 https://github.com/craftzdog/dotfiles-public/tree/master
-
-TODO:
-Install oh my posh
