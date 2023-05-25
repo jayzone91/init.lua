@@ -32,6 +32,14 @@ scoop install lua-language-server
 npm i -g typescript-language-server
 ```
 
+# Install Tree Sitter
+
+```
+scoop install tree-sitter
+```
+
+"Error in coroutine: no command :TSUpdate" Error happens only once @ install
+
 # Install font and set it as standard in terminal
 
 ```
@@ -54,7 +62,7 @@ Apperance PowerShell
 Video:
 https://www.youtube.com/watch?v=ajmK0ZNcM4Q
 
-Ende bei 50:00
+Ende bei 52:30
 
 infos:
 https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
