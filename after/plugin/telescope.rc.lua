@@ -46,7 +46,6 @@ telescope.load_extension("file_browser")
 
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = " "
 -- File Explorer
 vim.keymap.set(
   "n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files({ no_ignore = false, hidden = true })<cr>",
