@@ -5,36 +5,36 @@ This is just my nvim config including an installation guide for Windows.
 install with Choco as Admin
 
 ```PowerShell
-choco install neovim --pre
+choco install neovim --pre -y
 ```
 
 ## Local nVim Config:
 
-```
+```PowerShell
 $env:LOCALAPPDATA\nvim
 ```
 
 # Install packer
 
-```
+```PowerShell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
 # Install RipGrep
 
-```
+```PowerShell
 scoop install ripgrep
 ```
 
 # Install lua language Server
 
-´´´
+´´´PowerShell
 scoop install lua-language-server
 ´´´
 
 # Install Language Servers
 
-```
+```PowerShell
 npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server @fsouza/prettierd eslint_d
 
 rustup component add rust-src
@@ -42,21 +42,19 @@ rustup component add rust-src
 
 # Install Tree Sitter
 
-```
+```PowerShell
 scoop install tree-sitter
 ```
 
 # Install Zig Lang
 
-```
-choco install zig
+```PowerShell
+choco install zig -y
 ```
 
 # Install font and set it as standard in terminal
 
-```
-https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/Hack.zip
-```
+[https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.1/Hack.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.1/Hack.zip)
 
 # Custom Settings in Powershell:
 
@@ -79,14 +77,14 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 # Install Terminal Icons
 
-```
+```Powershell
 scoop bucket add extras
 scoop install terminal-icons
 ```
 
 ## open your terminal profile
 
-```
+```Powershell
 notepad $PROFILE
 ```
 
