@@ -98,11 +98,3 @@ Add user_profile.ps1 to your profile
 
 "Error in coroutine: no command :TSUpdate" Error happens only once @ install
 
-Video:
-https://www.youtube.com/watch?v=ajmK0ZNcM4Q
-
-Ende bei 1:23:
-
-infos:
-https://dev.to/craftzdog/my-neovim-setup-for-react-typescript-tailwind-css-etc-58fb
-https://github.com/craftzdog/dotfiles-public/tree/master
