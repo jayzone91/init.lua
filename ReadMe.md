@@ -67,7 +67,7 @@ Appearance General:
 Apperance PowerShell
 
 - Colorscheme Solarized Dark
-- Font: FiraCode Nerd Font Mono
+- Font: Hack Nerd Font Mono
 - Transparency: 85%
 - Acrylic material
 
