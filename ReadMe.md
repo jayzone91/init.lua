@@ -4,7 +4,7 @@ This is just my nvim config including an installation guide for Windows.
 
 install with Choco as Admin
 
-```PS1
+```PowerShell
 choco install neovim --pre
 ```
 
