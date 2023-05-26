@@ -11,3 +11,13 @@ dw => delete Word backwards
 in Filebrowser:
 
 N => new file
+
+// Normal Mode
+ss => split screen unten
+sv => split screen rechts
+
+// Everywhere
+s➡️ => Fenster nach rechts wechseln
+s⬅️ => Fenster nach links wechseln
+s⬆️ => Fenster nach oben wechseln
+s⬇️ => Fenster nach unten wechseln
