@@ -75,15 +75,22 @@ Apperance PowerShell
 
 ```Powershell
 winget install JanDeDobbeleer.OhMyPosh -s winget
+```
+
+# Install Terminal Icons
+
+```
+scoop bucket add extras
+scoop install terminal-icons
+```
+
+## open your terminal profile
+
+```
 notepad $PROFILE
-
 ```
 
-Add following line in notepad and save
-
-```
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" --print) -join "`n"))
-```
+Add user_profile.ps1 to your profile
 
 # Start Neovim
 
