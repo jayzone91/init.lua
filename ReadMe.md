@@ -2,11 +2,10 @@ This is just my nvim config including an installation guide for Windows.
 
 # Install Vim:
 
-install with Choco as Admin
+Install NeoVim Nightly from here:
+(https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds)[https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds]
 
-```PowerShell
-choco install neovim --pre -y
-```
+Set your Path Variable.
 
 ## Local nVim Config:
 
@@ -35,7 +34,7 @@ scoop install lua-language-server
 # Install Language Servers
 
 ```PowerShell
-npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server @fsouza/prettierd eslint_d
+npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server eslint_d prettier
 
 rustup component add rust-src
 ```
@@ -97,4 +96,3 @@ Add user_profile.ps1 to your profile
 ```
 
 "Error in coroutine: no command :TSUpdate" Error happens only once @ install
-

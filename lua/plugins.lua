@@ -48,7 +48,7 @@ packer.startup(function(use)
     run = ":TSUpdate"
   }
   use 'jose-elias-alvarez/null-ls.nvim'  -- use Neovim as a language Server
-  use "MunifTanjim/prettier.nvim" -- Prettier in nvim
+  use "sbdchd/neoformat" -- Prettier
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
   use "nvim-lua/plenary.nvim"
