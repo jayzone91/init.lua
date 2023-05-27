@@ -12,10 +12,10 @@ vim.keymap.set("n","dw",'vb"_d')
 vim.keymap.set("n","sv", ":vsplit<Return><C-w>w", { silent = true })
 vim.keymap.set("n","ss", ":split<Return><C-w>w", { silent = true })
 -- Move to other screen
-vim.keymap.set("","s<up>", "<C-w>k")
-vim.keymap.set("","s<left>", "<C-w>h")
-vim.keymap.set("","s<down>", "<C-w>j")
-vim.keymap.set("","s<right>", "<C-w>l")
+vim.keymap.set("n","s<up>", "<C-w>k")
+vim.keymap.set("n","s<left>", "<C-w>h")
+vim.keymap.set("n","s<down>", "<C-w>j")
+vim.keymap.set("n","s<right>", "<C-w>l")
 
 -- Move line
 vim.keymap.set("", "<leader><up>", ":m -2<Return>", { silent = true })
@@ -27,4 +27,4 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 -- fun Stuff
-vim.keymap.set("n","<leader>mr", "<cmd>CellularAutomation make_it_rain<CR>");
+vim.keymap.set("n","<leader>mr", ":CellularAutomaton make_it_rain<Return>");
