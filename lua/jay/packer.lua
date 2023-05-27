@@ -68,4 +68,6 @@ return require("packer").startup(function(use)
   use("folke/zen-mode.nvim")
   use("laytan/cloak.nvim")
   use("eandrju/cellular-automaton.nvim")
+  use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
 end)

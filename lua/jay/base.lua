@@ -1,6 +1,6 @@
 vim.cmd("autocmd!")
 
-vim.opt.guicursor = "n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block"
+vim.opt.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 vim.opt.nu = true
 vim.opt.relativenumber = false
 
@@ -23,5 +23,3 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
-
-
