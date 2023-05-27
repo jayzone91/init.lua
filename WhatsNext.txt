@@ -1,3 +1,7 @@
 scoop install aria2
 
 scoop config aria2-warning-enabled false
+
+https://apps.microsoft.com/store/detail/dev-home-vorschau/9N8MHTPHNGVV
+
+https://apps.microsoft.com/store/detail/dev-home-vorschau/9N8MHTPHNGVV
