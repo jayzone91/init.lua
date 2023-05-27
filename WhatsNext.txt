@@ -1,0 +1,3 @@
+scoop install aria2
+
+scoop config aria2-warning-enabled false
