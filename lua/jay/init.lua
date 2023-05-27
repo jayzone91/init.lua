@@ -3,7 +3,6 @@ require("jay.packer")
 require("jay.remap")
 
 local augroup = vim.api.nvim_create_augroup
-local JayGroup = augroup("Jay", {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup("HighlightYank", {})
@@ -23,12 +22,9 @@ autocmd("TextYankPost", {
   end,
 })
 
-autocmd({"BufWritepre"}, {
-  group = JayGroup,
-  pattern = "*",
-  command = [[%s/\s\+$//e]],
-})
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
