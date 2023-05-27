@@ -34,7 +34,7 @@ scoop install lua-language-server
 # Install Language Servers
 
 ```PowerShell
-npm i -g typescript-language-server typescript vscode-langservers-extracted cssmodules-language-server @microsoft/compose-language-service dockerfile-language-server-nodejs emmet-ls intelephense sql-language-server @tailwindcss/language-server eslint_d prettier
+npm i -g typescript-language-server
 
 rustup component add rust-src
 ```
@@ -53,7 +53,7 @@ choco install zig -y
 
 # Install font and set it as standard in terminal
 
-[https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.1/Hack.zip](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.0.1/Hack.zip)
+[https://github.com/pyrho/hack-font-ligature-nerd-font/blob/master/font/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf](https://github.com/pyrho/hack-font-ligature-nerd-font/blob/master/font/Hack%20Regular%20Nerd%20Font%20Complete%20Mono.ttf)
 
 # Custom Settings in Powershell:
 
