@@ -22,7 +22,7 @@ telescope.setup {
   },
   extensions = {
     file_browser = {
-      theme = "dropdown",
+      theme = "ivy",
       -- disables netrw add use telescope-file-browser in its place
       hijack_netrw = true,
       mappings = {
@@ -33,6 +33,8 @@ telescope.setup {
         ["n"] = {
           ["N"] = fb_actions.create,
           ["h"] = fb_actions.goto_parent_dir,
+          ["r"] = fb_actions.rename,
+          ["D"] = fb_actions.remove,
           ["/"] = function()
             vim.cmd("startinsert")
           end,
@@ -61,8 +63,8 @@ vim.keymap.set(
       respect_gitignore = false,
       hidden = true,
       grouped = true,
-      previewer = false,
+      previewer = true,
       initial_mode = "normal",
-      layout_config = { height = 40 }
+      layout_config = { height = 150 }
     })
   end)
