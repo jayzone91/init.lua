@@ -1,6 +1,4 @@
 vim.g.mapleader = " "
--- open File Explorer
---vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- just to be lazy
 vim.keymap.set("", "<C-c>", "<Esc>")
@@ -17,6 +15,10 @@ vim.keymap.set("n", "s<left>", "<C-w>h")
 vim.keymap.set("n", "s<down>", "<C-w>j")
 vim.keymap.set("n", "s<right>", "<C-w>l")
 
+-- New Tab
+
+-- Close Tab
+
 -- Move line
 vim.keymap.set("", "<leader><up>", ":m -2<Return>", { silent = true })
 vim.keymap.set("", "<leader><down>", ":m +1<Return>", { silent = true })
@@ -26,5 +28,3 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
--- fun Stuff
-vim.keymap.set("n", "<leader>mr", ":CellularAutomaton make_it_rain<Return>");
