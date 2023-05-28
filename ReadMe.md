@@ -70,24 +70,27 @@ Apperance PowerShell
 
 # Install oh my posh
 
-```Powershell
+```PowerShell
 winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
 
 # Install Terminal Icons
 
-```Powershell
+```PowerShell
 scoop bucket add extras
 scoop install terminal-icons
 ```
 
 ## open your terminal profile
 
-```Powershell
+```PowerShell
 notepad $PROFILE
 ```
+Add user_profile.txt to your profile
 
-Add user_profile.ps1 to your profile
+```PowerShell
+notepad $env:POSH_THEMES_PATH\theme.omp.json
+```
 
 # Start Neovim
 
