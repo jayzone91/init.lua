@@ -52,4 +52,11 @@ packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
   use "dinhhuy258/git.nvim"     -- For Git blame & browse
   use "linty-org/key-menu.nvim" -- Overview of all Keymaps
+  use({
+    "folke/noice.nvim",
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify"
+    }
+  })
 end)
