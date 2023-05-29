@@ -3,7 +3,7 @@ This is just my nvim config including an installation guide for Windows.
 # Install Vim:
 
 Install NeoVim Nightly from here:
-(https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds)[https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds]
+[https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds](https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds)
 
 Set your Path Variable.
 
