@@ -4,4 +4,4 @@ if (not status) then return end
 zenMode.setup {
 }
 
-vim.keymap.set('n', '<leader>zz', '<cmd>ZenMode<cr>', { silent = true })
+vim.keymap.set('n', '<space>zz', '<cmd>ZenMode<cr>', { silent = true, desc = "Toggle Zen Mode" })
