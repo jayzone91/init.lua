@@ -5,7 +5,8 @@ if (not status) then return end
 
 local protocol = require("vim.lsp.protocol")
 
-local augroup_format = vim.api.nvim_create_augroup("Format", {clear = true})
+
+local augroup_format = vim.api.nvim_create_augroup("Format", { clear = true })
 local enable_format_on_save = function(_, bufnr)
   vim.api.nvim_clear_autocmds({ group = augroup_format, buffer = bufnr })
   vim.api.nvim_create_autocmd("BufWritePre", {
@@ -31,7 +32,7 @@ local on_attach = function(client, bufnr)
 
   -- See ":help vim.lsp.*" for documentation on any of the functions below
   buf_set_keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-   --buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  --buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   --buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
 end
@@ -121,13 +122,30 @@ nvim_lsp.astro.setup {
   capabilities = capabilities
 }
 
+local cap = vim.lsp.protocol.make_client_capabilities()
+cap.textDocument.completion.completionItem.snippetSupport = true
+
+nvim_lsp.emmet_ls.setup({
+  on_attach = on_attach,
+  capabilities = cap,
+  filetypes = { "css", "html", "javascript", "javascriptreact", "less", "sass", "svelte", "scss", "svelte", "typescript",
+    "typescriptreact", "vue", "pug", "eruby" },
+  init_options = {
+    html = {
+      options = {
+        ["bem.enable"] = true,
+      }
+    }
+  }
+})
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
-  underline = true,
-  update_in_insert = false,
-  virtual_text = { spacing = 4, prefix = "●" },
-  severity_sort = true,
-}
+    underline = true,
+    update_in_insert = false,
+    virtual_text = { spacing = 4, prefix = "●" },
+    severity_sort = true,
+  }
 )
 
 -- Diagnostic symbols in the sign column (gutter)

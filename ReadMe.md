@@ -27,14 +27,14 @@ scoop install ripgrep
 
 # Install lua language Server
 
-´´´PowerShell
+```PowerShell
 scoop install lua-language-server
-´´´
+```
 
 # Install Language Servers
 
 ```PowerShell
-npm i -g typescript-language-server
+npm i -g typescript-language-server emmet-ls
 
 rustup component add rust-src
 ```
@@ -57,16 +57,7 @@ choco install zig -y
 
 # Custom Settings in Powershell:
 
-Appearance General:
-
-- Use Acrylic material in the tab row
-
-Apperance PowerShell
-
-- Colorscheme Solarized Dark
-- Font: Hack Nerd Font Mono
-- Transparency: 85%
-- Acrylic material
+Use Settings.json in PowerShell folder.
 
 # Install oh my posh
 
@@ -86,6 +77,7 @@ scoop install terminal-icons
 ```PowerShell
 notepad $PROFILE
 ```
+
 Add user_profile.txt to your profile
 
 ```PowerShell
@@ -93,6 +85,10 @@ notepad $env:POSH_THEMES_PATH\theme.omp.json
 ```
 
 # Start Neovim
+
+```PowerShell
+vim
+```
 
 ```
 :PackerInstall
