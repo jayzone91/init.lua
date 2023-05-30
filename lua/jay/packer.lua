@@ -15,6 +15,7 @@ packer.startup(function(use)
       vim.cmd("colorscheme rose-pine")
     end
   })
+  use "folke/trouble.nvim"
   use "nvim-lualine/lualine.nvim"       -- Statusline
   use "nvim-lua/plenary.nvim"           -- Common Utils
   use "onsails/lspkind.nvim"            -- vscode-like pictograms
@@ -37,11 +38,7 @@ packer.startup(function(use)
   use "nvim-telescope/telescope-file-browser.nvim"
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
-  use { 'numToStr/Comment.nvim',
-    requires = {
-      'JoosepAlviste/nvim-ts-context-commentstring'
-    }
-  }
+
   use "norcalli/nvim-colorizer.lua"
   use "folke/zen-mode.nvim"
   use({
@@ -50,8 +47,19 @@ packer.startup(function(use)
   })
   use "akinsho/nvim-bufferline.lua"
   use "lewis6991/gitsigns.nvim"
-  use "dinhhuy258/git.nvim"     -- For Git blame & browse
-  use "linty-org/key-menu.nvim" -- Overview of all Keymaps
+  use "dinhhuy258/git.nvim" -- For Git blame & browse
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timoutlen = 0
+      require("which-key").setup {
+        key_labels = {
+          ["<space>"] = "SPC",
+        }
+      }
+    end
+  }
   use({
     "folke/noice.nvim",
     requires = {

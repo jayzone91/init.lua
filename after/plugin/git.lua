@@ -4,8 +4,8 @@ if (not status) then return end
 git.setup({
   keymaps = {
     -- open blame window
-    blame = "<space>gb",
+    blame = "gb",
     -- open file/folder in git repo
-    browse = "<space>go",
+    browse = "go",
   }
 })

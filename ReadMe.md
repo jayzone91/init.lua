@@ -4,6 +4,7 @@
 
 - [rose-pine](https://github.com/rose-pine/neovim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [lspkind.nvim](https://github.com/onsails/lspkind.nvim)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
@@ -34,15 +35,15 @@
 - [nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 
-
 # Install Vim:
 
 Install NeoVim Nightly from here:
-[https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds](https://github.com/equalsraf/neovim-qt/wiki/Windows-AppVeyor-Builds)
+[https://github.com/neovim/neovim/releases/tag/nightly](https://github.com/neovim/neovim/releases/tag/nightly)
 
 Set your Path Variable.
 
 ## delete old configs
+
 ```PowerShell
 rm -rf $env:LOCALAPPDATA\nvim-data\*
 ```
@@ -62,11 +63,15 @@ mkdir $env:LOCALAPPDATA\nvim
 ```PowerShell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
+
 ## Install aria
+
 ```PowerShell
 scoop install aria2
 ```
+
 ## configure aria
+
 ```PowerShell
 scoop config aria2-warning-enabled false
 ```
@@ -74,14 +79,14 @@ scoop config aria2-warning-enabled false
 ## Install Depedencies
 
 ### Buckets
+
 ```PowerShell
 scoop bucket add extras
 ```
 
 ```PowerShell
-scoop install ripgrep lua-language-server tree-sitter terminal-icons
+scoop install https://gist.githubusercontent.com/jayzone91/b9b4a011e3868f80fdb61070ad54d5ce/raw/apps.json
 ```
-
 
 ## Install Language Servers
 
@@ -92,7 +97,6 @@ npm i -g typescript-language-server emmet-ls
 ```
 rustup component add rust-src
 ```
-
 
 ## Install Zig Lang
 
