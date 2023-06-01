@@ -25,7 +25,8 @@ ts.setup {
     "lua",
     "rust",
     "bash",
-    "regex"
+    "regex",
+    "prisma"
   },
   autotag = {
     enable = true,
