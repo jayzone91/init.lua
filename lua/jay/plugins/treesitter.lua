@@ -34,7 +34,6 @@ treesitter.setup({
 		"toml",
 		"php",
 		"rust",
-		"bash",
 		"regex",
 		"prisma",
 	},
