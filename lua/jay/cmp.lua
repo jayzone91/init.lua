@@ -17,8 +17,8 @@ local kind_icons = {
   Function = "",
   Constructor = "",
   Field = "",
-  Variable = "",
-  Class = "",
+  Variable = "",
+  Class = "ﴯ",
   Interface = "",
   Module = "",
   Property = "",
@@ -32,11 +32,11 @@ local kind_icons = {
   Reference = "",
   Folder = "",
   EnumMember = "",
-  Constant = "",
+  Constant = "",
   Struct = "",
   Event = "",
   Operator = "",
-  TypeParameter = "",
+  TypeParameter = "",
 }
 
 cmp.setup {
