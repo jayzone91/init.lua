@@ -45,7 +45,10 @@ return packer.startup(function(use)
 	use { "nvim-lualine/lualine.nvim" }
 	use { "numToStr/nvim-autopairs" }
   use { "lukas-reineke/indent-blankline.nvim"}
-  use {"nvim-lua/plenary.nvim"}
+  use {"nvim-lua/plenary.nvim"}  -- Common Utils
+  use {"onsails/lspkind.nvim"}  -- vscode-like pictograms
+  use {"windwp/nvim-ts-autotag"}
+  use {"kyazdani42/nvim-web-devicons"}
 
   --cmp
   use {"hrsh7th/nvim-cmp"}
@@ -64,6 +67,7 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim"}
   use { "jose-elias-alvarez/null-ls.nvim"}
   use { "RRethy/vim-illuminate" }
+  use {"glepnir/lspsaga.nvim"} -- LSP UIs
 
   -- Treesitter
   use {"nvim-treesitter/nvim-treesitter"}

@@ -21,14 +21,4 @@ end
 -- Set Font
 vim.opt.guifont = { "FiraCode Nerd Font", "h12" }
 
-require("jay.remap")
-require("jay.options")
-require("jay.plugins")
-require("jay.colorscheme")
-require("jay.lualine")
-require("jay.autopairs")
-require("jay.cmp")
-require("jay.treesitter")
-require("jay.indentline")
-require("jay.lsp")
-require("jay.telescope")
+require("jay")
