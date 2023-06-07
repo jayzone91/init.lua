@@ -1,24 +1,17 @@
-
--- Check which OS is present
--- To set Clipboard to buffer.
-local has = vim.fn.has
-local is_mac = has "macunix"
-local is_win = has "win32"
-local is_wsl = has "wsl"
-
-if is_mac == 1 then
-	require("jay.macos")
-end
-
-if is_win == 1 then
-	require("jay.windows")
-end
-
-if is_wsl == 1 then
-	require("jay.wsl")
-end
-
--- Set Font
-vim.opt.guifont = { "FiraCode Nerd Font", "h12" }
-
-require("jay")
+require("jay.plugins-setup")
+require("jay.core.options")
+require("jay.core.keymaps")
+require("jay.core.colorscheme")
+require("jay.plugins.comment")
+require("jay.plugins.webdevicons")
+require("jay.plugins.nvim-tree")
+require("jay.plugins.lualine")
+require("jay.plugins.telescope")
+require("jay.plugins.nvim-cmp")
+require("jay.plugins.lsp.mason")
+require("jay.plugins.lsp.lspsaga")
+require("jay.plugins.lsp.lspconfig")
+require("jay.plugins.lsp.null-ls")
+require("jay.plugins.autopairs")
+require("jay.plugins.treesitter")
+require("jay.plugins.gitsigns")
