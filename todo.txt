@@ -1,0 +1,3 @@
+- snippets laufen nicht richtig!
+- rfc in tsx geht nicht mehr.
+- lsp hat nil 
