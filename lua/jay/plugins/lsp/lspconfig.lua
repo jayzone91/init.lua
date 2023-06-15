@@ -15,6 +15,7 @@ local typescript_setup, typescript = pcall(require, "typescript")
 if not typescript_setup then
 	return
 end
+local util = require("lspconfig.util")
 
 local keymap = vim.keymap -- for conciseness
 
@@ -393,9 +394,4 @@ lspconfig["rust_analyzer"].setup({
 			workspaceFolders = true,
 		},
 	},
-
-	lspconfig["intelephense"].setup({
-		capabilities = capabilities,
-		on_attach = on_attach,
-	}),
 })
